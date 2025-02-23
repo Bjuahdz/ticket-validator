@@ -63,13 +63,16 @@
     </style>
 </head>
 <body>
-    <div class="validation-container">
-        <div class="success-icon">✓</div>
-        <h1>Valid KSU Ticket</h1>
-        <div id="ticketDetails" class="ticket-details">
-            <p>Loading ticket details...</p>
+    <div class="container">
+        <div class="validation-message">
+            <h2>KSU Fan Rewards Ticket Validator</h2>
+            <div id="eventMessage">
+                <h3>Congratulations on attending today's KSU game!</h3>
+                <p>Please scan your ticket QR code to validate your attendance and earn points.</p>
+            </div>
+            <div id="qr-reader"></div>
+            <div id="qr-reader-results"></div>
         </div>
-        <div class="valid-badge">Valid Entry</div>
     </div>
 
     <script>
