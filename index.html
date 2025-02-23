@@ -83,6 +83,25 @@
             border-radius: 5px;
             margin-top: 1rem;
         }
+
+        .ticket-details {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border: 1px solid #fdb913;
+        }
+
+        .ticket-details p {
+            color: white;
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .ticket-id {
+            color: #fdb913;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -91,6 +110,12 @@
             <h2>KSU Fan Rewards</h2>
             <div id="eventMessage">
                 <h3>Congratulations on attending today's KSU game!</h3>
+                <div class="ticket-details">
+                    <p><span class="ticket-id">Ticket ID:</span> KSU-2024-0123</p>
+                    <p>Date: March 23, 2024</p>
+                    <p>Time: 7:00 PM EST</p>
+                    <p>Location: Fifth Third Bank Stadium</p>
+                </div>
             </div>
             <div id="qr-reader"></div>
             <div id="qr-reader-results"></div>
