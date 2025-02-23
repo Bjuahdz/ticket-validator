@@ -7,65 +7,87 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            padding: 0;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            background-color: #1a1a1a;
-            padding: 20px;
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
         }
 
-        .validation-container {
-            background: #2d2d2d;
-            padding: 30px;
-            border-radius: 12px;
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            max-width: 320px;
-            width: 100%;
+            max-width: 600px;
+            width: 90%;
+            margin: 20px;
         }
 
-        .success-icon {
-            font-size: 64px;
-            margin-bottom: 20px;
-            color: #00ff00;
+        .validation-message {
+            margin-bottom: 2rem;
         }
 
-        h1 {
-            color: #ffffff;
+        h2 {
+            color: #492f24;  /* KSU Brown */
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #492f24;
+            margin-bottom: 1rem;
             font-size: 1.5rem;
-            margin-bottom: 15px;
         }
 
-        .ticket-details {
-            color: #e0e0e0;
-            margin: 15px 0;
-            text-align: left;
-            padding: 15px;
-            background: #3d3d3d;
+        p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        #qr-reader {
+            margin: 2rem auto;
+            max-width: 500px;
+            border: 2px solid #fdb913;  /* KSU Gold */
             border-radius: 8px;
+            overflow: hidden;
         }
 
-        .ticket-details p {
-            margin: 5px 0;
+        #qr-reader-results {
+            margin-top: 1rem;
+            padding: 1rem;
+            color: #492f24;
+            font-weight: bold;
         }
 
-        .valid-badge {
-            display: inline-block;
-            background: #00ff00;
-            color: #1a1a1a;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: 500;
-            margin-top: 15px;
+        /* Style for the success message */
+        .success-message {
+            background-color: #fdb913;  /* KSU Gold */
+            color: #492f24;  /* KSU Brown */
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        /* Style for error messages */
+        .error-message {
+            background-color: #ffebee;
+            color: #c62828;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="validation-message">
-            <h2>KSU Fan Rewards Ticket Validator</h2>
+            <h2>KSU Fan Rewards</h2>
             <div id="eventMessage">
                 <h3>Congratulations on attending today's KSU game!</h3>
                 <p>Please scan your ticket QR code to validate your attendance and earn points.</p>
