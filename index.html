@@ -12,19 +12,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f8f9fa;
+            background-color: #000000;  /* Black background */
             font-family: 'Arial', sans-serif;
         }
 
         .container {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.1);  /* Slight transparency */
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             text-align: center;
             max-width: 600px;
             width: 90%;
             margin: 20px;
+            backdrop-filter: blur(5px);
         }
 
         .validation-message {
@@ -32,13 +33,13 @@
         }
 
         h2 {
-            color: #492f24;  /* KSU Brown */
+            color: #fdb913;  /* KSU Gold */
             margin-bottom: 1.5rem;
             font-size: 2rem;
         }
 
         h3 {
-            color: #492f24;
+            color: white;
             margin-bottom: 1rem;
             font-size: 1.5rem;
         }
@@ -60,14 +61,14 @@
         #qr-reader-results {
             margin-top: 1rem;
             padding: 1rem;
-            color: #492f24;
+            color: white;
             font-weight: bold;
         }
 
         /* Style for the success message */
         .success-message {
-            background-color: #fdb913;  /* KSU Gold */
-            color: #492f24;  /* KSU Brown */
+            background-color: #fdb913;
+            color: #000000;
             padding: 1rem;
             border-radius: 5px;
             margin-top: 1rem;
@@ -76,8 +77,8 @@
 
         /* Style for error messages */
         .error-message {
-            background-color: #ffebee;
-            color: #c62828;
+            background-color: rgba(198, 40, 40, 0.8);
+            color: white;
             padding: 1rem;
             border-radius: 5px;
             margin-top: 1rem;
@@ -90,7 +91,6 @@
             <h2>KSU Fan Rewards</h2>
             <div id="eventMessage">
                 <h3>Congratulations on attending today's KSU game!</h3>
-                <p>Please scan your ticket QR code to validate your attendance and earn points.</p>
             </div>
             <div id="qr-reader"></div>
             <div id="qr-reader-results"></div>
